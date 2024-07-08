@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traversing</title>
+</head>
+<body>
+    <input type="text" id="in">
+    <button id="btn">Get Data</button>
+    <br>
+</body>
+<script>
+    let data = [2,3,53,23,64,34,23,23,64];
+    for(let i = 0;i<data.length;i++)
+    {
+        document.write(`Array ${i} : ${data[i]} <br>`)
+    }
+    document.getElementById('btn').onclick = () => {
+       let inputData = document.getElementById('in').value;
+        if(inputData < data.length)
+        {
+       alert(data[inputData]);
+        }
+        else
+        {
+            console.log('Bro Add something valid')
+        }
+    }
+
+</script>
+</html>
